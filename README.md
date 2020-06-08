@@ -1,12 +1,8 @@
-# This software is distributed 'as is' and with no warranties of any kind, whether express or implied, including and without limitation,
-# any warranty of merchantability or fitness for a particular purpose.
+# This software is distributed 'as is' and with no warranties of any kind, whether express or implied, including and without limitation, any warranty of merchantability or fitness for a particular purpose.
 
 # The user (you) must assume the entire risk of using the software.
 
-# In no event shall any individual, company or organization involved in any way in the development,
-# sale or distribution of this software be liable for any damages whatsoever relating to the use,
-# misuse, or inability to use this software (including, without limitation, damages for loss of profits,
-# business interruption, loss of information, or any other loss).'
+# In no event shall any individual, company or organization involved in any way in the development, sale or distribution of this software be liable for any damages whatsoever relating to the use, misuse, or inability to use this software (including, without limitation, damages for loss of profits, business interruption, loss of information, or any other loss).'
 
 The s3kinit python script is a helper script for Hadoop systems where interactive
 users want to authenticate to an ADFS Identity Provider that has a cross realm trust
@@ -35,17 +31,17 @@ to be valid for (minimum 1, maximum 12).  The user enters their username on the
 Identity Provider (user@domain), then the password, and then the number which 
 corresponds to the role they wish to assume.
 
-[chip@lrmk025 ~]$ s3kinit.py -H 12
-Username@Domain:  chip@HDFS.EMC.COM
+[chip@lrmk025 ~]$ s3kinit.py -H 12<br/>
+Username@Domain:  chip@HDFS.EMC.COM<br/>
 Password: <PASSWORD>
 
-Following provider role combination can be used with assertion provided with ECS assumerolewithsaml api
-[ 0 ]:  urn:ecs:iam::s3:role/ADFS-AdminUser urn:ecs:iam::s3:saml-provider/HadoopProvider
-Enter the number for the role to assume (between 0 and 0):  0
-You chose role urn:ecs:iam::s3:role/ADFS-AdminUser and provider urn:ecs:iam::s3:saml-provider/HadoopProvider
+Following provider role combination can be used with assertion provided with ECS assumerolewithsaml api<br/>
+[ 0 ]:  urn:ecs:iam::s3:role/ADFS-AdminUser urn:ecs:iam::s3:saml-provider/HadoopProvider<br/>
+Enter the number for the role to assume (between 0 and 0):  0<br/>
+You chose role urn:ecs:iam::s3:role/ADFS-AdminUser and provider urn:ecs:iam::s3:saml-provider/HadoopProvider<br/>
 
-Access Key: ASIA08D38B57E42710C5
-Secret Key: wnFHFMzryQmXZ8x7MsBKIRaMMp-xH7HkEin54HDZLLU
+Access Key: ASIA08D38B57E42710C5<br/>
+Secret Key: wnFHFMzryQmXZ8x7MsBKIRaMMp-xH7HkEin54HDZLLU<br/>
 Session Token: CgJzMxoUQVJPQUMzQTBCOTYwN0JDNzQyOUQiI3VybjplY3M6aWFtOjpzMzpyb2xlL0FERlMtQWRtaW5Vc2VyKhRBU0lBMDhEMzhCNTdFNDI3MTBDNTJQTWFzdGVyS2V5UmVjb3JkLTNkYTRlMmU2YzIwY2IzODY0NWVlMmViOWQ1ZTFjNTE4MmJhMGFiNDc1YjEwODhhYTk0MGYzMjJlMDI1YTNjZDU4rrPatqkuUhFjaGlwQGRldi5udWxsLmNvbVonCghzYW1sOmF1ZBIbaHR0cHM6Ly8xMC4yNDcuMTc5LjExMi9zYW1sWhUKCHNhbWw6c3ViEglIREZTXGNoaXBaGwoNc2FtbDpzdWJfdHlwZRIKcGVyc2lzdGVudFoyChJzYW1sOm5hbWVxdWFsaWZpZXISHHRXK0dxRVVuWVJsZ1A2R00yTFZBQWcrcFUwdz1aNgoIc2FtbDppc3MSKmh0dHA6Ly9BRC5oZGZzLmVtYy5jb20vYWRmcy9zZXJ2aWNlcy90cnVzdGIsdXJuOmVjczppYW06OnMzOnNhbWwtcHJvdmlkZXIvSGFkb29wUHJvdmlkZXJogY359gU
 Expiration Date (UTC): 2020-06-09T02:09:05Z
 
