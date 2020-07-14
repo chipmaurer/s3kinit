@@ -7,6 +7,8 @@
 The s3kinit python script is a helper script for Hadoop systems where interactive users want to authenticate to an ADFS Identity Provider that has a cross realm trust with an ECS storage cluster (version 3.5 or above).  The s3kinit script then will
 show the user which roles on the ECS can be assumed, and the user would then select one of the possible roles.  The script then sends a SAML assertion request to the STS on the ECS, and responds with temporary ECS S3 credentials which the user can then use in requests to the ECS for secure access to an ECS S3 bucket.
 
+Since most Hadoop installations run python 2.7, this script runs python 2.7.  Contact me if you need a version that runs on python 3.
+
 Installation
 ------------
 There are two configuration settings that must first be configured before using the s3kinit.py script. One setting is to identify the idpentryurl which is configured on the ADFS host when the Cross-Realm Trust was established.  The entry is similar to this: 
