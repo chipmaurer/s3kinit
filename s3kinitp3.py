@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# s3kinit.py - authenticate to Identity Provider, receive possible roles, and then select and assume a valid role
+# s3kinitp3.py - authenticate to Identity Provider, receive possible roles, and then select and assume a valid role
 # 
 # Set the 
 # idpentryurl - The URL used by the ADFS Identity Provider associated with the ECS cluster
@@ -40,11 +40,11 @@ def parse_args(argv):
     try:
         opts, args = getopt.getopt(argv,"hH:")
     except getopt.GetoptError:
-        print ('s3kinit.py [-H HOURS]')
+        print ('s3kinitp3.py [-H HOURS]')
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':
-            print ('s3kinit.py [-H HOURS]')
+            print ('s3kinitp3.py [-H HOURS]')
             sys.exit()
         elif opt == '-H':
             if (int(arg) > 12):
