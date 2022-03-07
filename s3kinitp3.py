@@ -105,7 +105,7 @@ if __name__ == '__main__':
     # print ('************************************************************************************')
     # print (formresponse.text.decode ('utf8'))
     # print ('************************************************************************************')
-    formsoup = BeautifulSoup(formresponse.text.decode('utf8'), features="lxml")
+    formsoup = BeautifulSoup(formresponse.text, features="lxml")
     payload = {}
     
     for inputtag in formsoup.find_all(re.compile('(INPUT|input)')):
@@ -160,7 +160,7 @@ if __name__ == '__main__':
     del password
     
     # Decode the response and extract the SAML assertion
-    soup = BeautifulSoup(response.text.decode('utf8'), features="lxml")
+    soup = BeautifulSoup(response.text, features="lxml")
     # print (response.text.decode('utf8'))
     # print ('************************************************************************************')
     assertion = ''
